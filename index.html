@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Practice</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for extra challenge */
+    :root {
+      --primary-color: #6f42c1;
+      --secondary-color: #e83e8c;
+    }
+
+    .navbar, .footer {
+      background-color: var(--primary-color);
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1517817748490-72cc2cc6f0ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      padding: 100px 0;
+    }
+
+    .services .icon {
+      font-size: 3rem;
+      color: var(--secondary-color);
+    }
+
+    .portfolio .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .footer {
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">BrandLogo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div id="hero" class="hero text-center">
+    <div class="container">
+      <h1>Welcome to Our Website</h1>
+      <p>Your success is our priority</p>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div id="services" class="services py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <div class="icon mb-3"><i class="fas fa-cog"></i></div>
+          <h4>Service 1</h4>
+          <p>Setting</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="icon mb-3"><i class="fas fa-cloud"></i></div>
+          <h4>Service 2</h4>
+          <p>Info</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="icon mb-3"><i class="fas fa-lock"></i></div>
+          <h4>Service 3</h4>
+          <p>Privacy and Srcurity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div id="portfolio" class="portfolio py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" class="card-img-top" alt="Portfolio Image 1">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">computer programming</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1488722796624-0aa6f1bb6399?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" class="card-img-top" alt="Portfolio Image 2">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Self-discipline</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1517430816045-df4b7de01f17?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" class="card-img-top" alt="Portfolio Image 3">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Motivation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <div id="contact" class="contact py-5">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    <p>
+      <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+    </p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
